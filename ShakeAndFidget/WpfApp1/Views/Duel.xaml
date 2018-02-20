@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="Duel">
 
     <Grid Name="mainGrid">
@@ -14,17 +14,55 @@
             <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
         <Menu Grid.Column="0" Grid.ColumnSpan="1">
-            
+
         </Menu>
         <Grid Grid.Column="1" Grid.ColumnSpan="1">
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="4*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
-                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="266" Margin="34,26,0,0" VerticalAlignment="Top" Width="263">
+                <Image HorizontalAlignment="Left" Width="219" Margin="22,0,0,18" Height="223" VerticalAlignment="Bottom"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="266" Margin="41,26,0,0" VerticalAlignment="Top" Width="263" Grid.Column="2">
+                <Image HorizontalAlignment="Left" Width="219" Margin="22,0,0,18" Height="223" VerticalAlignment="Bottom"/>
+            </Border>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="46" Margin="36,320,0,0" Stroke="Black" VerticalAlignment="Top" Width="262"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="46" Margin="45,324,0,0" Stroke="Black" VerticalAlignment="Top" Width="262" Grid.Column="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="200" Margin="61,174,0,0" VerticalAlignment="Top" Width="200" Grid.Column="1">
+                <Image HorizontalAlignment="Left" Width="176" Margin="9,0,0,12" Height="177" VerticalAlignment="Bottom"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="59" Margin="63,26,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1">
+                <Image HorizontalAlignment="Left" Width="42" Margin="9,0,0,8" Height="40" VerticalAlignment="Bottom"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="59" Margin="63,97,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1">
+                <Image HorizontalAlignment="Left" Width="42" Margin="9,0,0,8" Height="40" VerticalAlignment="Bottom"/>
+            </Border>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="124" Margin="141,28,0,0" TextWrapping="Wrap" Text="Historique" VerticalAlignment="Top" Width="114"/>
+            <Menu Grid.Column="1" HorizontalAlignment="Left" Height="258" Margin="69,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="192">
+                <MenuItem Header="ActionCombat1" Height="85" Width="193"/>
+                <MenuItem Header="ActionCombat2" Height="85" Width="193"/>
+                <MenuItem Header="ActionCombat3" Height="85" Width="193"/>
+            </Menu>
+            <DataGrid HorizontalAlignment="Left" Height="102" Margin="38,38,0,0" Grid.Row="2" VerticalAlignment="Top" Width="258">
+                <DataGrid.Columns>
+                    <DataGridHyperlinkColumn/>
+                    <DataGridHyperlinkColumn/>
+                    <DataGridHyperlinkColumn/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid HorizontalAlignment="Left" Height="102" Margin="39,46,0,0" Grid.Row="1" VerticalAlignment="Top" Width="258" Grid.Column="2">
+                <DataGrid.Columns>
+                    <DataGridHyperlinkColumn/>
+                    <DataGridHyperlinkColumn/>
+                    <DataGridHyperlinkColumn/>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="780" d:DesignWidth="1220"
       Title="Connexion">
     <Grid Name="mainGrid">
         <Grid.RowDefinitions>
@@ -34,17 +34,17 @@
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" VerticalAlignment="Bottom"
-                   HorizontalAlignment="Left" 
-                   Content="Pseudo :" />
-            <TextBox Grid.Row="1" Margin="15" />
+            <Label Grid.Row="1" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" 
+                   Content="Pseudo :" Height="44" Margin="66,6,364,75" Width="180" />
+            <TextBox Grid.Row="1" Margin="74,59,18,34" />
             <Label Grid.Row="2" VerticalAlignment="Bottom"
                    HorizontalAlignment="Left"
-                   Content="Password :" />
-            <TextBox Grid.Row="3" Margin="15" />
-            <Button Grid.Row="4" Margin="12" 
-                    Content="Connexion" />
-            <Button Grid.Row="5" Margin="12" 
+                   Content="Password :" Margin="74,0,0,4" />
+            <TextBox Grid.Row="3" Margin="83,15,24,77" />
+            <Button Grid.Row="3" Margin="220,124,226,90" 
+                    Content="Connexion" Grid.RowSpan="2" />
+            <Button Grid.Row="4" Margin="220,87,224,1" 
                     Content="Registered" />
         </Grid>
     </Grid>
