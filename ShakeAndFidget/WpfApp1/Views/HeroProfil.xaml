@@ -19,12 +19,12 @@
             <ColumnDefinition Width="323*"/>
         </Grid.ColumnDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="717" VerticalAlignment="Top" Width="248" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="363" Margin="9,3,0,0" VerticalAlignment="Top" Width="381" Grid.Column="1" Grid.RowSpan="2">
-            <Image HorizontalAlignment="Left" Width="379" Margin="-2,0,0,-2" Height="355" VerticalAlignment="Bottom"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="363" Margin="9,-2,0,0" VerticalAlignment="Top" Width="381" Grid.Column="1">
+            <Image HorizontalAlignment="Left" Width="367" Margin="5,0,0,5" Height="349" VerticalAlignment="Bottom"/>
         </Border>
         <Label Content="Infos perso" HorizontalAlignment="Left" Margin="8,0,0,4" VerticalAlignment="Center" Height="352" Width="377" Grid.Column="1" Grid.Row="1"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="362" Margin="388,-2,0,0" VerticalAlignment="Top" Width="644" Grid.ColumnSpan="2" Grid.Column="1">
-            <ListView HorizontalAlignment="Left" Height="354" VerticalAlignment="Top" Width="644" Margin="-3,5,0,0" SelectionChanged="ListView_SelectionChanged">
+            <ListView HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="632" Margin="5,5,0,0" SelectionChanged="ListView_SelectionChanged">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>

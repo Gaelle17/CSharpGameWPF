@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1.Models
+
+namespace CSharpGameModel.Models
 {
-    class Hero {
+    public class Hero 
+    {
 
         #region StaticVariables
         #endregion
@@ -15,11 +17,11 @@ namespace WpfApp1.Models
         #endregion
 
         #region Variables
+
         #endregion
 
         #region Attributs
 
-        private int id;
         private String name;
         private int level;
         private int life;
@@ -52,6 +54,7 @@ namespace WpfApp1.Models
             get { return mana; }
             set { mana = value; }
         }
+
 
         #endregion
 

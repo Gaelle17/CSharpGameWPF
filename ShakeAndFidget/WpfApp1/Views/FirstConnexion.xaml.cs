@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.ViewModels;
 
 namespace WpfApp1.Views
 {
@@ -23,6 +24,8 @@ namespace WpfApp1.Views
         public FirstConnexion()
         {
             InitializeComponent();
+            new FirstConnexionViewModel(this);
+
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

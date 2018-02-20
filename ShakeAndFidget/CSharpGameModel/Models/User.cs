@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1.Models
+namespace CSharpGameModel.Models
 {
-    class User {
+    public class User {
 
         #region StaticVariables
         #endregion
@@ -15,12 +15,29 @@ namespace WpfApp1.Models
         #endregion
 
         #region Variables
+
         #endregion
 
         #region Attributs
+
+        String name;
+        String email;
+
         #endregion
 
         #region Properties
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
         #endregion
 
         #region Constructors

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{4113B7F3-677D-4900-8607-237DF017AA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGameModel", "CSharpGameModel\CSharpGameModel.csproj", "{C2306225-488D-45B4-BD5E-1B1D95D5F4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{8273731B-04CE-4586-955F-FA2414BA8E3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4113B7F3-677D-4900-8607-237DF017AA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4113B7F3-677D-4900-8607-237DF017AA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4113B7F3-677D-4900-8607-237DF017AA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2306225-488D-45B4-BD5E-1B1D95D5F4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2306225-488D-45B4-BD5E-1B1D95D5F4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2306225-488D-45B4-BD5E-1B1D95D5F4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2306225-488D-45B4-BD5E-1B1D95D5F4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8273731B-04CE-4586-955F-FA2414BA8E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8273731B-04CE-4586-955F-FA2414BA8E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8273731B-04CE-4586-955F-FA2414BA8E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8273731B-04CE-4586-955F-FA2414BA8E3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
