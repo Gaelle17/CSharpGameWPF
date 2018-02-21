@@ -1,5 +1,4 @@
-﻿using MySql.Data.Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
@@ -7,14 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSharpGameModel.Models;
+using CSharpGeModel.Models;
+using MySql.Data.MySqlClient;
 
 namespace DataBase
 {
-    [DbConfigurationType(typeof(MySqlEFConfiguration))]
+    [DbConfigurationType(typeof(MySqlConfiguration))]
     public class MySQLManager<T> : DbContext where T : ModelBase
     {
-        public MySQLManager(String connectionString = null) :
-            base(connectionString == null ?
+        public MySQLManager(String connectionString = null) : base(connectionString == null ?
                 "Server=localhost;Port=3306;Database=CSharpGame;Uid=root;Pwd="
                 : connectionString)
         {

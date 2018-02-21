@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CSharpGameModel.Models;
+using DataBase;
 
-
-namespace CSharpGameModel.Models
+namespace CSharpGeModel.Models
 {
-    public class Hero 
+    public class Hero : ModelBase
     {
 
         #region StaticVariables
