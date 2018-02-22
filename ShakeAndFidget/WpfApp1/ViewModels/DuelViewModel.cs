@@ -14,6 +14,7 @@ namespace WpfApp1.ViewModels
         public DuelViewModel(Duel duel)
         {
             this.duel = duel;
+
         }
     }
 }

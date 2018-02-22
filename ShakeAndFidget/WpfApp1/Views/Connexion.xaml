@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="780" d:DesignWidth="1220"
+      d:DesignHeight="350" d:DesignWidth="525"
       Title="Connexion">
     <Grid Name="mainGrid">
         <Grid.RowDefinitions>
@@ -27,24 +27,29 @@
         <Grid Name="form" Grid.Row="1" Grid.RowSpan="1"
               Grid.Column="1" Grid.ColumnSpan="1">
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition Height="2*" />
-                <RowDefinition />
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="45*" />
+                <RowDefinition Height="32*" />
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="68*"/>
+                <RowDefinition Height="56*" />
+                <RowDefinition Height="52*" />
+                <RowDefinition Height="64*"/>
+                <RowDefinition Height="38*" />
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="116*" />
             </Grid.RowDefinitions>
-            <Label Grid.Row="1" VerticalAlignment="Center"
+            <Label VerticalAlignment="Center"
                    HorizontalAlignment="Center" 
-                   Content="Pseudo :" Height="44" Margin="66,6,364,75" Width="180" />
-            <TextBox Grid.Row="1" Margin="74,59,18,34" />
-            <Label Grid.Row="2" VerticalAlignment="Bottom"
+                   Content="Pseudo :" Height="24" Margin="74,0,386,8" Width="180" Grid.Row="1" />
+            <TextBox Grid.Row="3" Margin="74,12,18,34" />
+            <Label Grid.Row="4" VerticalAlignment="Bottom"
                    HorizontalAlignment="Left"
-                   Content="Password :" Margin="74,0,0,4" />
-            <TextBox Grid.Row="3" Margin="83,15,24,77" />
-            <Button Grid.Row="3" Margin="220,124,226,90" 
-                    Content="Connexion" Grid.RowSpan="2" />
-            <Button Grid.Row="4" Margin="220,87,224,1" 
+                   Content="Password :" Margin="74,0,0,10" RenderTransformOrigin="0.792,0.365" Height="26" Width="65" />
+            <TextBox Grid.Row="5" Margin="74,10,18,19" />
+            <Button Grid.Row="7" Margin="220,0,226,0" 
+                    Content="Connexion" />
+            <Button Name="BtnRegister" Grid.Row="9" Margin="218,0,226,0" 
                     Content="Registered" />
         </Grid>
     </Grid>

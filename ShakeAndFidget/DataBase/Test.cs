@@ -18,13 +18,11 @@ namespace DataBase
             hero1.Level = 1;
             hero1.Life = 32;
             hero1.Mana = 12;
-            Console.WriteLine(hero1);
-            Console.WriteLine("hello");
 
 
-            Hero hero2 = heroManager.Insert(hero1).Result;
-            hero2 = heroManager.Get(1).Result;
-            Console.WriteLine("hello");
+
+            //Hero hero2 = heroManager.Insert(hero1).Result;
+            //hero2 = heroManager.Get(1).Result;
 
         }
     }
