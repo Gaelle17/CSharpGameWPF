@@ -1,4 +1,5 @@
-﻿using DataBase;
+﻿using CSharpGeModel.Models;
+using DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Hunter : ModelBase
+    public class Hunter : Hero
     {
         #region StaticVariables
         #endregion

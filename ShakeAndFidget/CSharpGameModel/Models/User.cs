@@ -32,7 +32,10 @@ namespace CSharpGameModel.Models
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set {
+                OnPropertyChanged("Name");
+                name = value;
+            }
         }
         public string Email
         {
@@ -48,6 +51,10 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Constructors
+        public User()
+        {
+
+        }
         #endregion
 
         #region StaticFunctions

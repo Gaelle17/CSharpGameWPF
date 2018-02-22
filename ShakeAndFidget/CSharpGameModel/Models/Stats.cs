@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Stats
+    public class Stats : ModelBase
     {
         #region StaticVariables
         #endregion
@@ -86,6 +87,10 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Constructors
+        public Stats()
+        {
+
+        }
         #endregion
 
         #region StaticFunctions

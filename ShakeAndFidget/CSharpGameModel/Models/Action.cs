@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Action : ModelBase
+    public class Action : ModelBase
     {
         #region StaticVariables
         #endregion
@@ -25,6 +25,10 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Constructors
+        public Action()
+        {
+
+        }
         #endregion
 
         #region StaticFunctions

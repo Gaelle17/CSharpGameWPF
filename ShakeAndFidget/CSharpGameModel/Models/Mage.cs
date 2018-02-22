@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Mage : ModelBase
+    public class Mage : ModelBase
     {
         #region StaticVariables
         #endregion

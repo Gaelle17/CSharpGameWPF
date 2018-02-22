@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Skill
+    public class Skill
     {
         #region StaticVariables
         #endregion
@@ -45,6 +45,10 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Constructors
+        public Skill()
+        {
+
+        }
         #endregion
 
         #region StaticFunctions

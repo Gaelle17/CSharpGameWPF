@@ -32,6 +32,14 @@ namespace DataBase
         {
             modelBuilder.Entity<Hero>();
             modelBuilder.Entity<User>();
+            modelBuilder.Entity<Aventure>();
+            modelBuilder.Entity<Combat>();
+            modelBuilder.Entity<Equipment>();
+            modelBuilder.Entity<Item>();
+            modelBuilder.Entity<Skill>();
+            modelBuilder.Entity<Stats>();
+            modelBuilder.Entity<Usable>();
+
             base.OnModelCreating(modelBuilder);
 
         }

@@ -1,4 +1,5 @@
 ﻿using CSharpGeModel.Models;
+using DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    class Equipment
+    public class Equipment : ModelBase
     {
         #region StaticVariables
         #endregion
@@ -38,6 +39,10 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Constructors
+        public Equipment()
+        {
+
+        }
         #endregion
 
         #region StaticFunctions

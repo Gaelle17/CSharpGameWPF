@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpGameModel.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,7 @@ namespace WpfApp1.ViewModels
         #endregion
 
         #region Variables
-        private String pseudo;
-        private String passwd;
+        private User currentUser = new User();
         #endregion
 
         #region Attributs
@@ -43,12 +43,19 @@ namespace WpfApp1.ViewModels
         {
             MainWindow.Instance.CurrentPage = new FirstConnexion();
         }
+
+        private void BtnValidate_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            MainWindow.Instance.CurrentPage = new HeroProfil();
+        }
         #endregion
 
         #region Events
         private void Events()
         {
+            this.connexion.uc1.CurrentUser = currentUser;
             this.connexion.BtnRegister.Click += BtnRegister_Click;
+            this.connexion.BtnValidate.Click += BtnValidate_Click;
         }
         #endregion
 
