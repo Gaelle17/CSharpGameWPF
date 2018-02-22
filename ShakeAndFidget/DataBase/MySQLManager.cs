@@ -76,7 +76,7 @@ public async Task<T> Update(T item)
             await this.SaveChangesAsync();
             return items;
         }
-public async Task<T> Get(Int32 id)
+        public async Task<T> Get(Int32 id)
         {
             return await this.DbSetT.FindAsync(id) as T;
         }
@@ -92,7 +92,7 @@ public async Task<T> Get(Int32 id)
             result.AddRange(temp);
             return result;
         }
-public async Task<Int32> Delete(T item)
+        public async Task<Int32> Delete(T item)
         {
             await Task.Factory.StartNew(() =>
             {
@@ -112,9 +112,9 @@ public async Task<Int32> Delete(T item)
             var res = await this.SaveChangesAsync();
             return res;
         }
-//public async Task<IEnumerable<T>> CustomQuery(Criteria criteria)
-    //    {
-      //      return await this.DbSetT.SqlQuery(criteria.MySQLCompute()).ToListAsync();
-    //    }
+    //  public async Task<IEnumerable<T>> CustomQuery(Criteria criteria)
+    //  {
+    //      return await this.DbSetT.SqlQuery(criteria.MySQLCompute()).ToListAsync();
+    //  }
    }
 }
