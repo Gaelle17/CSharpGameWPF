@@ -10,21 +10,21 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="91*"/>
-            <RowDefinition Height="89*"/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="122*"/>
-            <ColumnDefinition Width="195*"/>
-            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="717" VerticalAlignment="Top" Width="248" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="363" Margin="9,-2,0,0" VerticalAlignment="Top" Width="381" Grid.Column="1">
-            <Image HorizontalAlignment="Left" Width="367" Margin="5,0,0,5" Height="349" VerticalAlignment="Bottom"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+            <Image />
         </Border>
-        <Label Content="Infos perso" HorizontalAlignment="Left" Margin="8,0,0,4" VerticalAlignment="Center" Height="352" Width="377" Grid.Column="1" Grid.Row="1"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="362" Margin="388,-2,0,0" VerticalAlignment="Top" Width="644" Grid.ColumnSpan="2" Grid.Column="1">
-            <ListView HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="632" Margin="5,5,0,0" SelectionChanged="ListView_SelectionChanged">
+        <Label Content="Infos perso" Grid.Column="1" Grid.Row="1" Background="{x:Null}" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1"  Grid.ColumnSpan="2" Grid.Column="2">
+            <ListView SelectionChanged="ListView_SelectionChanged" Background="{x:Null}" VerticalContentAlignment="Top">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>

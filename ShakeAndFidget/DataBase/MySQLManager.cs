@@ -30,9 +30,10 @@ namespace DataBase
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Hero>();
             modelBuilder.Entity<User>();
+            base.OnModelCreating(modelBuilder);
+
         }
 
         public DbSet<T> DbSetT { get; set; }
