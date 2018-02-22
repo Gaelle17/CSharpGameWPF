@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace DataBase
 {
     public class ModelBase : INotifyPropertyChanged
     {
+
         #region StaticVariables
         #endregion
 
@@ -19,11 +21,11 @@ namespace DataBase
         #endregion
 
         #region Attributs
-        private int id;
+        private Int32 id;
         #endregion
 
         #region Properties
-        public int Id
+        public Int32 Id
         {
             get { return id; }
             set { id = value; }

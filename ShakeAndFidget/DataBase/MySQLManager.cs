@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using CSharpGameModel.Models;
 using CSharpGeModel.Models;
-using MySql.Data.MySqlClient;
+using MySql.Data.Entity;
 
 namespace DataBase
 {
-    [DbConfigurationType(typeof(MySqlConfiguration))]
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class MySQLManager<T> : DbContext where T : ModelBase
     {
         public MySQLManager(String connectionString = null) : base(connectionString == null ?

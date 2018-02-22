@@ -60,6 +60,10 @@ namespace CSharpGeModel.Models
         #endregion
 
         #region Constructors
+        public Hero()
+        {
+                
+        }
         #endregion
 
         #region StaticFunctions
