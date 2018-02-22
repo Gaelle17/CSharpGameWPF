@@ -40,6 +40,11 @@ namespace DataBase
         {
 
         }
+
+        public ModelBase(Int32 id)
+        {
+            this.id = id;
+        }
         #endregion
 
         #region StaticFunctions

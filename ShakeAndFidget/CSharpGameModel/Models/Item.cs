@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    public class User : ModelBase {
-
+    class Item : ModelBase
+    {
         #region StaticVariables
         #endregion
 
@@ -16,35 +16,30 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Variables
-
         #endregion
 
         #region Attributs
-
-        String name;
-        String email;
-        String password;
-
+        private int id;
+        private String name;
+        private String description;
         #endregion
 
         #region Properties
-
-        public string Name
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public String Name
         {
             get { return name; }
             set { name = value; }
         }
-        public string Email
+        public String Description
         {
-            get { return email; }
-            set { email = value; }
+            get { return description; }
+            set { description = value; }
         }
-        public String Paswword
-        {
-            get { return password; }
-            set { password = value; }
-        }
-
         #endregion
 
         #region Constructors
@@ -58,6 +53,5 @@ namespace CSharpGameModel.Models
 
         #region Events
         #endregion
-
     }
 }
