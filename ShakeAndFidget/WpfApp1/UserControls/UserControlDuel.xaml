@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfApp1.UserControls.UserControl1"
+﻿<UserControl x:Class="WpfApp1.UserControls.UserControlDuel"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -16,7 +16,49 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image Name="user1" Grid.Column="0" Grid.Row="0"></Image>
-        <Image Name="user1" Grid.Column="2" Grid.Row="0"></Image>
+        <!-- Player 1 -->
+        <Image x:Name="user1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+        <Grid x:Name="inventaireU1" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="obj1U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj2U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj3U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj4U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj5U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj6U1" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+        </Grid>
+        <!-- Player 2 -->
+        <Image x:Name="user2" Grid.Column="2" Grid.Row="0" Source="pack://application:,,,/"/>
+        <Grid x:Name="inventaireU2" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="obj1U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj2U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj3U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj4U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj5U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+            <Image x:Name="obj6U2" Grid.Column="0" Grid.Row="0" Source="pack://application:,,,/"/>
+        </Grid>
+        <Image x:Name="anim" Grid.Column="1" Grid.Row="0" Source="pack://application:,,,/"/>
+        <TextBlock x:Name="attackHistory" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>
