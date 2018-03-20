@@ -46,7 +46,7 @@ namespace WpfApp1.ViewModels
 
         private void BtnValidate_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            MainWindow.Instance.CurrentPage = new HeroProfil();
+            MainWindow.Instance.CurrentPage = new Page1();
         }
         #endregion
 
