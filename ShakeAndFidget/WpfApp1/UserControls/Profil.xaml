@@ -51,7 +51,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
             </Grid>
-            <Image HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <Image HorizontalAlignment="Center"  VerticalAlignment="Center" Source="" />
         </Grid>
 
         <Grid Grid.Column="1">

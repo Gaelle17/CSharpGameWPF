@@ -43,12 +43,31 @@ namespace WpfApp1.ViewModels
         {
             MainWindow.Instance.CurrentPage = new FirstConnexion();
         }
+
+        private void CmbSelect_select(object sender, System.Windows.RoutedEventArgs e)
+        {
+            switch (this.firstConnexion.CmbSelect.SelectedIndex)
+            {
+                case 0:
+                    Console.WriteLine("1");
+                    break;
+                case 1:
+                    Console.WriteLine("1");
+                    break;
+                case 2:
+                    Console.WriteLine("1");
+                    break;
+
+
+            }
+        }
         #endregion
 
         #region Events
         private void Events()
         {
             this.firstConnexion.BtnValidate.Click += BtnValidate_Click;
+            this.firstConnexion.CmbSelect.SelectionChanged += CmbSelect_select;
         }
         #endregion
 

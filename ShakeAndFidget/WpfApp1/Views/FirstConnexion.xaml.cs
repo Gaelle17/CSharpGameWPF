@@ -26,6 +26,7 @@ namespace WpfApp1.Views
         {
             InitializeComponent();
             new FirstConnexionViewModel(this);
+            DataContext =  "bob" ;
 
         }
 
