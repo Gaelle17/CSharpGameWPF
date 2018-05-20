@@ -24,66 +24,32 @@ namespace CSharpGeModel.Models
         #region Attributs
 
         private String name;
-        private int level;
-        private int life;
-        private int mana;
-        private List<int> inventory;
-        private List<int> body;
-        private List<int> belt;
-        private int gold;
+        private int statsId;
+        private Stats stats;
+        private int bodyId;
+        private Body body;
+        private int beltId;
+        private Belt belt;
+        private ICollection<Item> inventory;
 
         #endregion
 
         #region Properties
 
-        public String Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+        public string Name { get => name; set => name = value; }
 
-        public int Level
+        public int StatsId { get => statsId; set => statsId = value; }
+        public Stats Stats
         {
-            get { return level; }
-            set { level = value; }
+            get { return stats; }
+            set { stats = value; }
         }
+        public int BodyId { get => bodyId; set => bodyId = value; }
+        public Body Body { get => body; set => body = value; }
+        public int BeltId { get => beltId; set => beltId = value; }
+        public Belt Belt { get => belt; set => belt = value; }
 
-        public int Life
-        {
-            get { return life; }
-            set { life = value; }
-        }
-
-        public int Mana
-        {
-            get { return mana; }
-            set { mana = value; }
-        }
-
-        public List<int> Inventory
-        {
-            get { return inventory; }
-            set { inventory = value; }
-        }
-
-        public List<int> Body
-        {
-            get { return body; }
-            set { body = value; }
-        }
-
-        public List<int> Belt
-        {
-            get { return belt; }
-            set { belt = value; }
-        }
-
-        public int Gold
-        {
-            get { return gold; }
-            set { gold = value; }
-        }
-
+        public ICollection<Item> Inventory { get => inventory; set => inventory = value; }
 
 
         #endregion
@@ -94,31 +60,32 @@ namespace CSharpGeModel.Models
                 
         }
 
-        public Hero(int id, int level, String name, int life, List<int> inventory, List<int> body, List<int> belt, int gold) : base(id)
+        public Hero(Int32 id, String name, Stats stats, Body body, Belt belt) : base(id)
         {
-            this.level = level;
-            this.name = name;
-            this.life = life;
-            this.inventory = inventory;
-            this.body = body;
-            this.belt = belt;
-            this.gold = gold;
+            this.Id = id;
+            this.Name = name;
+            this.Stats = stats;
+            this.Body = body;
+            this.Belt = belt;
         }
+
+
         #endregion
 
         #region StaticFunctions
         #endregion
 
         #region Functions
-        public void Fight()
-        {
+            public void Fight()
+            {
 
-        }
+            }
 
-        public void LearnSkill()
-        {
+            public void LearnSkill()
+            {
 
-        }
+            }
+
         #endregion
 
         #region Events

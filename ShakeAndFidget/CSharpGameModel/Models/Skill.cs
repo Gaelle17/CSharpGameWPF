@@ -1,4 +1,5 @@
 ﻿using CSharpGeModel.Models;
+using DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpGameModel.Models
 {
-    public class Skill
+    public class Skill : ModelBase
     {
         #region StaticVariables
         #endregion
@@ -25,11 +26,6 @@ namespace CSharpGameModel.Models
         #endregion
 
         #region Properties
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
 
         public String Name
         {

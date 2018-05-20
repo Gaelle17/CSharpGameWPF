@@ -9,6 +9,9 @@ using CSharpGameModel.Models;
 using CSharpGeModel.Models;
 using MySql.Data.Entity;
 
+/// <summary>
+/// Database creator with asynchrome methods for requests
+/// </summary>
 namespace DataBase
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
@@ -28,17 +31,24 @@ namespace DataBase
 
         }
 
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Hero>();
-            modelBuilder.Entity<User>();
+            modelBuilder.Entity<CSharpGameModel.Models.Action>();
             modelBuilder.Entity<Aventure>();
+            modelBuilder.Entity<Belt>();
+            modelBuilder.Entity<Body>();
             modelBuilder.Entity<Combat>();
-            modelBuilder.Entity<Equipment>();
+            modelBuilder.Entity<Hero>();
             modelBuilder.Entity<Item>();
             modelBuilder.Entity<Skill>();
             modelBuilder.Entity<Stats>();
-            modelBuilder.Entity<Usable>();
+            modelBuilder.Entity<User>();
 
             base.OnModelCreating(modelBuilder);
 
@@ -120,6 +130,7 @@ public async Task<T> Update(T item)
             var res = await this.SaveChangesAsync();
             return res;
         }
+
     //  public async Task<IEnumerable<T>> CustomQuery(Criteria criteria)
     //  {
     //      return await this.DbSetT.SqlQuery(criteria.MySQLCompute()).ToListAsync();

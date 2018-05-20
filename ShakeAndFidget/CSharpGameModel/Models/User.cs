@@ -1,6 +1,8 @@
-﻿using DataBase;
+﻿using CSharpGeModel.Models;
+using DataBase;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +27,11 @@ namespace CSharpGameModel.Models
         String email;
         String password;
 
+        [ForeignKey("Hero")]
+        int adventurerId;
+        Hero adventurer;
+
+
         #endregion
 
         #region Properties
@@ -42,11 +49,14 @@ namespace CSharpGameModel.Models
             get { return email; }
             set { email = value; }
         }
-        public String Paswword
+        public String Password
         {
             get { return password; }
             set { password = value; }
         }
+
+        public Hero Adventurer { get => adventurer; set => adventurer = value; }
+        public int AdventurerId { get => adventurerId; set => adventurerId = value; }
 
         #endregion
 
@@ -54,6 +64,14 @@ namespace CSharpGameModel.Models
         public User()
         {
 
+        }
+
+        public User(String name, string password, Hero hero)
+        {
+            this.Name = name;
+            this.password = password;
+            this.email = "a.b@c.d";
+            this.adventurer = hero;
         }
         #endregion
 

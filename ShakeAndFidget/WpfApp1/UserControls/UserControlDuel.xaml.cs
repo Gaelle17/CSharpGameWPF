@@ -20,7 +20,7 @@ namespace WpfApp1.UserControls
     /// <summary>
     /// Logique d'interaction pour UserControl1.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl, INotifyPropertyChanged
+    public partial class UserControlDuel : UserControl, INotifyPropertyChanged
     {
         private User currentUser;
         public User CurrentUser
@@ -32,7 +32,7 @@ namespace WpfApp1.UserControls
             }
         }
 
-        public UserControl1()
+        public UserControlDuel()
         {
             InitializeComponent();
             this.DataContext = this;

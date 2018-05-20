@@ -15,8 +15,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Username :"  Grid.Row="1" Grid.Column="1" Background="{x:Null}"/>
-        <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Text="{Binding CurrentUser.Name}" />
+        <TextBox Name="name" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Text="{Binding CurrentUser.Name}" />
         <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Password :"  />
-        <TextBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Text="{Binding CurrentUser.Password}" />
+        <TextBox Name="password" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Text="{Binding CurrentUser.Password}" />
     </Grid>
 </UserControl>

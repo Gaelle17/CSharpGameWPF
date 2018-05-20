@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpGameModel.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,28 @@ using System.Windows.Shapes;
 namespace WpfApp1.Views
 {
     /// <summary>
-    /// Logique d'interaction pour Page1.xaml
+    /// Logique d'interaction pour Home.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Home : Page
     {
-        public Page1()
+        private User currentUser;
+        public User CurrentUser
+        {
+            get { return currentUser; }
+            set { currentUser = value; }
+        }
+
+        public Home()
         {
             InitializeComponent();
+            new HomeViewModel(this);
+        }
+
+        public Home(User currentUser)
+        {
+            InitializeComponent();
+            this.currentUser = currentUser;
+            new HomeViewModel(this);
         }
     }
 }

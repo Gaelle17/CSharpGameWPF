@@ -20,10 +20,14 @@ namespace CSharpGameModel.Models
 
         #region Attributs
         private int damage;
-        private int strenght;
+        private int level;
+        private int life;
+        private int mana;
+        private int gold;
+        private int hero_type;
+        private int strength;
         private int intelligence;
         private int luck;
-        private int speed;
         private int agility;
         private int resistance;
         private int maxLife;
@@ -37,10 +41,10 @@ namespace CSharpGameModel.Models
             set { damage = value; }
         }
 
-        public int Strenght
+        public int Strength
         {
-            get { return strenght; }
-            set { strenght = value; }
+            get { return strength; }
+            set { strength = value; }
         }
 
         public int Intelligence
@@ -53,12 +57,6 @@ namespace CSharpGameModel.Models
         {
             get { return luck; }
             set { luck = value; }
-        }
-
-        public int Speed
-        {
-            get { return speed; }
-            set { speed = value; }
         }
 
         public int Agility
@@ -84,6 +82,12 @@ namespace CSharpGameModel.Models
             get { return maxMana; }
             set { maxMana = value; }
         }
+
+        public int Level { get => level; set => level = value; }
+        public int Life { get => life; set => life = value; }
+        public int Mana { get => mana; set => mana = value; }
+        public int Gold { get => gold; set => gold = value; }
+        public int Hero_type { get => hero_type; set => hero_type = value; }
         #endregion
 
         #region Constructors
@@ -91,6 +95,25 @@ namespace CSharpGameModel.Models
         {
 
         }
+
+        public Stats(int damage, int level, int life, int mana, int gold, int hero_type, int strength, int intelligence, int luck, int agility, int resistance, int maxLife, int maxMana)
+        {
+            this.damage = damage;
+            this.level = level;
+            this.life = life;
+            this.mana = mana;
+            this.gold = gold;
+            this.hero_type = hero_type;
+            this.strength = strength;
+            this.intelligence = intelligence;
+            this.luck = luck;
+            this.agility = agility;
+            this.resistance = resistance;
+            this.maxLife = maxLife;
+            this.maxMana = maxMana;
+        }
+
+
         #endregion
 
         #region StaticFunctions
