@@ -78,8 +78,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserControls\Profil.xaml.cs">
-      <DependentUpon>Profil.xaml</DependentUpon>
+    <Compile Include="UserControls\UserControlTaverne.xaml.cs">
+      <DependentUpon>UserControlTaverne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlProfil.xaml.cs">
+      <DependentUpon>UserControlProfil.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
@@ -87,10 +90,14 @@
     <Compile Include="UserControls\UserControlDuel.xaml.cs">
       <DependentUpon>UserControlDuel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlMenu.xaml.cs">
+      <DependentUpon>UserControlMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ConnexionViewModel.cs" />
     <Compile Include="ViewModels\DuelViewModel.cs" />
     <Compile Include="ViewModels\FirstConnexionViewModel.cs" />
     <Compile Include="ViewModels\HeroProfilViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="Views\Connexion.xaml.cs">
       <DependentUpon>Connexion.xaml</DependentUpon>
     </Compile>
@@ -121,7 +128,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControls\Profil.xaml">
+    <Page Include="UserControls\UserControlTaverne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlProfil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -132,6 +143,10 @@
     <Page Include="UserControls\UserControlDuel.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UserControlMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Views\Connexion.xaml">
       <Generator>MSBuild:Compile</Generator>

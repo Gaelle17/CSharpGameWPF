@@ -1,12 +1,20 @@
-﻿namespace WpfApp1.Views
+﻿using WpfApp1.UserControls;
+
+namespace WpfApp1.Views
 {
-    internal class HomeViewModel
+    public class HomeViewModel
     {
-        private Home home;
+        public Home home;
 
         public HomeViewModel(Home home)
         {
             this.home = home;
+            UserControlMenu menu = new UserControlMenu(this);
+            UserControlProfil profil = new UserControls.UserControlProfil(this);
+            //home.Action.Children.Clear();
+            home.Menu.Children.Add(menu);
+            home.Action.Children.Add(profil);
         }
+
     }
 }

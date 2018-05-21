@@ -8,12 +8,15 @@
       d:DesignHeight="720" d:DesignWidth="1280"
       Title="Home"
       xmlns:uc="clr-namespace:WpfApp1.UserControls">
+      
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <uc:UserControlDuel x:Name="Duel" Grid.Column="1" />
+        <WrapPanel Name="Menu" Grid.Column="0" />
+        <WrapPanel Name="Action" Grid.Column="1" />
+
     </Grid>
 </Page>

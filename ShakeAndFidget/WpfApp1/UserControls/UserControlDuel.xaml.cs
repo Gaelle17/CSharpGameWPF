@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Views;
 
 namespace WpfApp1.UserControls
 {
@@ -23,6 +24,8 @@ namespace WpfApp1.UserControls
     public partial class UserControlDuel : UserControl, INotifyPropertyChanged
     {
         private User currentUser;
+        private HomeViewModel homeViewModel;
+
         public User CurrentUser
         {
             get { return currentUser; }
@@ -36,6 +39,11 @@ namespace WpfApp1.UserControls
         {
             InitializeComponent();
             this.DataContext = this;
+        }
+
+        public UserControlDuel(HomeViewModel homeViewModel)
+        {
+            this.homeViewModel = homeViewModel;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

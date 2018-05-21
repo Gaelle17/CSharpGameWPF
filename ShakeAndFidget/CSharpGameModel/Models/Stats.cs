@@ -32,6 +32,7 @@ namespace CSharpGameModel.Models
         private int resistance;
         private int maxLife;
         private int maxMana;
+        private int XP;
         #endregion
 
         #region Properties
@@ -88,6 +89,7 @@ namespace CSharpGameModel.Models
         public int Mana { get => mana; set => mana = value; }
         public int Gold { get => gold; set => gold = value; }
         public int Hero_type { get => hero_type; set => hero_type = value; }
+        public int XP1 { get => XP; set => XP = value; }
         #endregion
 
         #region Constructors
@@ -111,12 +113,28 @@ namespace CSharpGameModel.Models
             this.resistance = resistance;
             this.maxLife = maxLife;
             this.maxMana = maxMana;
+            this.XP = 0;
         }
 
 
         #endregion
 
         #region StaticFunctions
+        public override string ToString()
+        {
+            String statsDetail =    "level: " + level + "\n" +
+                                    "XP: " + XP + "\n" +
+                                    "damage: " + damage + "\n" +
+                                    "life: " + life + "/" + maxLife + "\n" +
+                                    "mana: " + mana + "/" + maxMana + "\n" +
+                                    "strength: " + strength + "\n" +
+                                    "intelligence: " + intelligence + "\n" +
+                                    "luck: " + luck + "\n" +
+                                    "agility: " + agility + "\n" +
+                                    "resistance: " + resistance + "\n" +
+                                    "gold: " + gold + "\n" ;
+            return statsDetail;
+        }
         #endregion
 
         #region Functions

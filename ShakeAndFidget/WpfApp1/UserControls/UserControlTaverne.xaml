@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="WpfApp1.UserControls.UserControlTaverne"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="btn_boire" Content="Boire" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <Button Name="btn_manger" Content="Manger" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Column="1"/>
+            <Button Name="btn_discuter" Content="Discuter" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Column="2"/>
+            <Label Content="1 gold" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
+            <Label Content="1 gold" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.Column="1"/>
+            <Label Content="1 gold" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.Column="2"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Label Name="myGold" Content="My Gold " HorizontalAlignment="Left" Grid.Row="0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="result" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Row="1" />
+        </Grid>
+        
+
+    </Grid>
+
+</UserControl>

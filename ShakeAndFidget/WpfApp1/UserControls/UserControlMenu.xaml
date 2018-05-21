@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfApp1.UserControls.UserControl2"
+﻿<UserControl x:Class="WpfApp1.UserControls.UserControlMenu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -16,7 +16,7 @@
         <Button Name="btn_profil" Grid.Row="0" Grid.Column="1" Content="Profil"/>
         <Button Name="btn_duel" Grid.Row="1" Grid.Column="1" Content="Duels"/>
         <Button Name="btn_quest" Grid.Row="2" Grid.Column="1" Content="Quêtes"/>
-        <Button Name="btn_recreate" Grid.Row="3" Grid.Column=" 1" Content="Recréer un personnage"/>
+        <Button Name="btn_recreate" Grid.Row="3" Grid.Column=" 1" Content="Taverne"/>
         <Button Name="btn_exit" Grid.Row="4" Grid.Column="1" Content="Sortie"/>
     </Grid>
 </UserControl>
