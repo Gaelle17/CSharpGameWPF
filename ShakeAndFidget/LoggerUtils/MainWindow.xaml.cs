@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1.Views
+namespace LoggerUtils
 {
     /// <summary>
-    /// Logique d'interaction pour Page1.xaml
+    /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class MainWindow : Window
     {
-        public Page1()
+        public MainWindow()
         {
             InitializeComponent();
         }

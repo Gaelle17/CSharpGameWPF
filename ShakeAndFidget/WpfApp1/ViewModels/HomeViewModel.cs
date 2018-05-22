@@ -11,9 +11,12 @@ namespace WpfApp1.Views
             this.home = home;
             UserControlMenu menu = new UserControlMenu(this);
             UserControlProfil profil = new UserControls.UserControlProfil(this);
+            UserControlDuel battle = new UserControls.UserControlDuel(this);
             //home.Action.Children.Clear();
             home.Menu.Children.Add(menu);
             home.Action.Children.Add(profil);
+
+            //menu.btn_duel += 
         }
 
     }
